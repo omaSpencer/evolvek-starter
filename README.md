@@ -38,13 +38,13 @@ cd <repo-name>
 2. **Függőségek telepítése:**
 
 ```bash
-pnpm install
+npm install
 ```
 
 3. **Fejlesztői szerver indítása:**
 
 ```bash
-pnpm dev --filter=web
+npm dev --filter=web
 ```
 
 ## 📦 Csomagok
@@ -73,9 +73,9 @@ pnpm dev --filter=web
 ## 🧼 Hasznos parancsok
 
 ```bash
-pnpm build             # Összes csomag és app buildelése
-pnpm lint              # Kódellenőrzés a teljes monorepóra
-pnpm dev --filter=web  # Csak a web app fejlesztői mód
+npm build             # Összes csomag és app buildelése
+npm lint              # Kódellenőrzés a teljes monorepóra
+npm dev --filter=web  # Csak a web app fejlesztői mód
 ```
 
 ## 📄 Licenc
