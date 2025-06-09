@@ -9,11 +9,12 @@ Ez a monorepo a [Turborepo](https://turbo.build/repo)-t használja a modern full
 ├── apps/
 │   └── web/              # Next.js alkalmazás
 ├── packages/
-│   ├── db/               # Drizzle ORM konfiguráció és sémák
-│   ├── ui/               # UI komponensek (shadcn/ui)
-│   ├── tailwindcss/      # TailwindCSS közös konfiguráció
-│   └── auth/             # Lucia auth setup
-├── turbo.json            # Turborepo konfiguráció
+│   ├── eslint-config/      # Eslint konfiguráció
+│   ├── typescript-config/  # Typescript konfiguráció
+│   ├── db/                 # Drizzle ORM konfiguráció és sémák
+│   ├── ui/                 # UI komponensek (shadcn/ui)
+│   └── tailwindcss-config/ # TailwindCSS közös konfiguráció
+├── turbo.json              # Turborepo konfiguráció
 └── package.json
 ```
 
@@ -24,7 +25,6 @@ Ez a monorepo a [Turborepo](https://turbo.build/repo)-t használja a modern full
 - **shadcn/ui** – komponens-alapú UI fejlesztés
 - **TailwindCSS** – utility-first CSS framework
 - **Drizzle ORM** – típusbiztos adatbázis lekérdezések
-- **Lucia Auth** – egyszerű és biztonságos autentikáció
 
 ## 🚀 Indítás
 
@@ -64,11 +64,6 @@ npm dev --filter=web
 
 - Közös Tailwind konfiguráció
 - `tailwind.config.ts` és `postcss.config.js`
-
-### `packages/auth`
-
-- Lucia konfiguráció
-- Middleware, session kezelés
 
 ## 🧼 Hasznos parancsok
 
