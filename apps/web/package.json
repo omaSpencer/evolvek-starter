@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "author": "Evolvek <evolvek-admin@evolvek.dev>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack --port 3000",
     "build": "next build",
