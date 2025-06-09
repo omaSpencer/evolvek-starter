@@ -1,0 +1,26 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    "./*": "./*.ts",
+    "./**/*.ts": "./**/*.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "push": "npx drizzle-kit push --config=drizzle.config.ts",
+    "generate": "npx drizzle-kit generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "drizzle-kit": "^0.31.1"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "drizzle-orm": "^0.43.1"
+  }
+}
