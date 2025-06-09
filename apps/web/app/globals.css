@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+@import '@repo/tailwind-config';
+@import '@repo/ui/styles.css';
+
+body {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.uploadthing-btn::after {
+  left: 0;
+  top: 0;
+  width: var(--progress-width);
+  height: 100%;
+  background-color: var(--color-primary);
+}
+
+.sun-editor {
+  height: 100% !important;
+  border-radius: var(--radius-sm);
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.sun-editor-editable {
+  height: 60vh !important;
+  font-family: var(--font-sans) !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif) !important;
+  }
+
+  pre,
+  code {
+    font-family: var(--font-mono) !important;
+  }
+}
+
+.article {
+  h1 {
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.5rem);
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: clamp(1.3rem, 2vw + 0.4rem, 2rem);
+    margin-block-end: clamp(0.25rem, 1vw + 0.25rem, 0.5rem);
+  }
+  h3 {
+    font-size: clamp(1.15rem, 1.5vw + 0.35rem, 1.6rem);
+  }
+  h4 {
+    font-size: clamp(1.05rem, 1.2vw + 0.3rem, 1.3rem);
+  }
+}
+
+.article-content {
+  & > p,
+  & > ul,
+  & > ol {
+    font-size: clamp(1rem, 1.2vw + 0.25rem, 1.25rem);
+    line-height: 1.6;
+  }
+
+  table,
+  td,
+  th {
+    font-size: clamp(0.75rem, 1.2vw + 0.25rem, 1rem) !important;
+    line-height: 1.6;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.5rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid var(--border);
+    font-style: italic;
+    color: var(--primary);
+  }
+}
